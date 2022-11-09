@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+    <br />
+    <!-- table -->
+    <form action="#">
+      <table>
+        <tbody>
+          <tr>
+            <td><label for="firstName">First Name: </label></td>
+            <td>
+              <input
+                type="text"
+                name="firstName"
+                minlength="2"
+                placeholder="First Name"
+                id="firstName"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lastName">Last Name: </label></td>
+            <td>
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Last Name"
+                id="lastName"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender</label></td>
+            <td>
+              <input type="radio" name="sex" id="gender" value="Female" />Female
+              <input type="radio" name="sex" id="gender" value="Male" />Male
+              <input
+                type="radio"
+                name="sex"
+                id="gender"
+                value="Prefer not to say"
+              />Prefer not to say
+            </td>
+          </tr>
+          <tr>
+            <td><label for="birthday">Birthday:</label></td>
+            <td>
+              <input type="date" name="birthday" id="birthday" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="age">Age: <i> (minors not allowed)</i></label>
+            </td>
+            <td>
+              <input type="number" name="age" id="age" min="18" max="150" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email: </label></td>
+            <td><input type="email" name="email" id="email" required /></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password: </label></td>
+            <td>
+              <input type="password" name="password" id="password" required />
+            </td>
+          </tr>
+          <!-- checkbox -->
+          <tr>
+            <td><label for="country">Country:</label></td>
+            <td>
+              <select name="country" id="country">
+                <option selected disabled value="">Select your country</option>
+                <option value="">Philippines</option>
+                <option value="">South Korea</option>
+                <option value="">China</option>
+                <option value="">California</option>
+                <option value="">Japan</option>
+                <option value="">Thailand</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="upload">Upload your file:</label></td>
+            <td>
+              <input
+                type="file"
+                name="upload"
+                id="upload"
+                accept="image/*"
+                multiple
+              />
+            </td>
+          </tr>
+          <!-- input range -->
+          <tr>
+            <td><label for="skills">Skills Rating:</label></td>
+            <td>
+              <input type="range" name="skills" id="skills" min="0" max="10" />
+            </td>
+
+            <!-- input time/month/color -->
+          </tr>
+
+          <tr>
+            <td>Pick a time</td>
+            <td><input type="time" name="time" id="time" /></td>
+          </tr>
+
+          <tr>
+            <td>Pick a Month</td>
+            <td><input type="month" name="month" id="month" /></td>
+          </tr>
+
+          <tr>
+            <td>Pick a Color</td>
+            <td><input type="color" name="color" id="color" /></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                name="terms"
+                id="terms"
+                value="terms"
+                required
+              />
+              <label for="terms">Accept Terms and Conditions</label>
+            </td>
+          </tr>
+          <!-- textarea -->
+          <tr>
+            <td><label for="feedback">Feedback:</label></td>
+            <td>
+              <textarea
+                name="feedback"
+                id="feedback"
+                cols="30"
+                rows="10"
+                placeholder="Send us your feedback"
+                required
+              ></textarea>
+            </td>
+          </tr>
+          <!-- sumbit and reset 
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="submit" />
+            <input type="reset" value="reset" />
+        </td>
+        </tr>
+        -->
+
+          <!-- button with image -->
+          <tr>
+            <td></td>
+            <td>
+              <button type="submit">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/tl/d/d4/Mickey_Mouse.png"
+                  alt="submitButton"
+                  width="15"
+                />Click Me to Submit!
+              </button>
+
+              <button type="reset">
+                <img
+                  src="https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_620/MTc0NDY4NzA4NDU2OTk4NTM0/donald-duck-turns-84-years-old.webp"
+                  alt="reset submitButton"
+                  width="15"
+                  height="18"
+                />Click Me to Reset
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
