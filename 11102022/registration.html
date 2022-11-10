@@ -9,11 +9,106 @@
   <body>
     <h1>REGISTRATION FORM</h1>
     <form action="#">
-      <table>
+      <table bgcolor="gray" cellspacing="3px" cellpadding="5px">
+        <tr align="left">
+            <th><label for="name">Name:</label></th>
+        </tr>
         <tr>
-          <td><input type="text" name="firstName" id="firstName" /></td>
-          <td><input type="text" name="middleName" id="middleName" /></td>
-          <td><input type="text" name="lastName" id="lastName" /></td>
+            <td>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" required/>
+                <input type="text" name="middleName" id="middleName" placeholder="Middle Name" required/>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required />
+            </td>
+        </tr>
+        <tr align="left">
+            <th>
+            <label for="address"> Address:
+            </label>
+            </th>
+        </tr>
+        <tr>
+            <td><textarea
+              name="address"
+              id="address"
+              cols="70"
+              rows="3"
+              placeholder="House No./ Street/Brgy./City/Province" required
+            ></textarea>
+            </td>
+        </tr>
+        <tr align="left">
+            <th>
+                <label for="gender">Gender:</label>
+            </th>
+        </tr>
+        <td>
+            <input type="radio" name="gender" id="male">Male
+            <input type="radio" name="gender" id="female">Female
+            </td>
+        </tr>
+        <tr align="left">
+            <th>
+                <label for="careerPath">Career Path:</label>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <select name="career" id="career">
+                <option value="" selected disabled>Select Career Path</option>
+                    <option value="FrontEndDeveloper">Front-end Developer</option>
+                    <option value="BackEndDeveloper">Back-end Developer</option>
+                    <option value="FullStackDeveloper">Full-stack Developer</option>
+                </select>
+            </td>
+        </tr>
+        <tr align="left">
+            <th><label for="skills">Technical Skills: <i>(check all that apply)</i> </label></th>
+        </tr>
+            <td>
+                <input type="checkbox" name="skills" id="skills">
+                <label for="skills">HTML</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="skills" id="skills">
+                <label for="skills">CSS</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="skills" id="skills">
+                <label for="skills">Javascript</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="skills" id="skills">
+                <label for="skills">MySQL</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="skills" id="skills">
+                <label for="skills">Php</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="skills" id="skills">
+                <label for="skills">Laravel</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="skills" id="skills">
+                <label for="skills">React Js</label>
+            </td>
+        </tr>
+        <tr align="center">
+            <td bgcolor="white">
+                <input type="submit" value="Submit">
+            </td>
         </tr>
       </table>
     </form>
