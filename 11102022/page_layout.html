@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Layout Example</title>
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png"
+      content="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Div -->
+    <h1>Div</h1>
+    <div
+      id="container"
+      style="
+        width: 500px;
+        border: 1px solid #000;
+        text-align: center;
+        margin: auto;
+      "
+    >
+      <div style="background-color: blue; height: 35px">Header Section</div>
+
+      <div style="background-color: red; height: 35px">Navigation Bar</div>
+
+      <div
+        style="background-color: pink; float: left; width: 20%; height: 300px"
+      >
+        Index
+      </div>
+
+      <div
+        style="background-color: white; float: left; width: 80%; height: 300px"
+      >
+        Content section
+      </div>
+
+      <div style="background-color: green; height: 70px; clear: both">
+        Footer Section
+      </div>
+    </div>
+    <br /><br />
+    <!-- Table -->
+    <h2>Table</h2>
+
+    <table
+      style="
+        border: 1px solid black;
+        border-collapse: collapse;
+        border-spacing: 0;
+        text-align: center;
+        width: 500px;
+        margin: auto;
+      "
+      border="1px"
+    >
+      <tr>
+        <td style="background-color: blue; height: 35px" colspan="2">
+          Header Section
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color: red; height: 35px" colspan="2">
+          Navigation Bar
+        </td>
+      </tr>
+
+      <tr style="height: 300px">
+        <td style="background-color: pink; width: 20%">Index</td>
+
+        <td style="background-color: white; width: 80%">Content Section</td>
+      </tr>
+      <tr></tr>
+      <tr></tr>
+      <tr>
+        <td style="background-color: green; height: 70px" colspan="2">
+          Footer Section
+        </td>
+      </tr>
+      <tr></tr>
+    </table>
+    <br /><br />
+
+    <header>
+      <h1>Semantic HTML</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <h1>Life Quotes</h1>
+        <section>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
+            voluptatem ad quo sit eius quas, nobis architecto culpa. Qui labore
+            quia consectetur in harum nesciunt perferendis blanditiis sequi illo
+            odio! Molestias iusto ipsum quam tempora magnam autem doloremque,
+            quia minus, ab corrupti, natus cum. Illum at corporis quia sequi
+            enim velit quibusdam eius. Nostrum inventore voluptates rerum ab
+            provident illum. Optio beatae exercitationem ad velit maiores, iste
+            tempore aliquid totam magnam, voluptas quod reprehenderit corporis?
+            Similique, voluptas nemo. Suscipit pariatur officia obcaecati
+            eligendi iste aliquam exercitationem ipsum ratione nostrum dolorum.
+          </p>
+        </section>
+        <section>
+          <figure>
+            <img
+              src="https://placeimg.com/640/480/tech"
+              alt="random photo"
+              width="300px"
+            />
+            <figcaption>Random Photo</figcaption>
+          </figure>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
