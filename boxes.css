@@ -1,0 +1,38 @@
+.box10 {
+    margin-top: 20px;
+    position: relative;
+    border: 2px solid black;
+    height: 400px;
+    padding: 30px;
+}
+.box11 {
+    background: blue;
+}
+.box11,
+.box12 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.box12 {
+    position: absolute;
+    background: yellow;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 25px;
+    z-index: -1;
+}
+.box10::before {
+    content:"";
+    background-image: url(https://placeimg.com/640/480/animals);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 400px;
+}
