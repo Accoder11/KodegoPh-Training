@@ -15,6 +15,67 @@ h2 {
     font-size: 6rem;
     color: blue;
 }
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.box {
+    width: 30%;
+    height: 300px;
+    padding: 20px;
+    font-size: 3.2rem;
+    border: 2px solid black;
+}
+.box1 {
+    background-color: blue;
+}
+.box2 {
+    background-color: red;
+}
+.box3 {
+    background-color: orange;
+}
+
+
+
+
+/* MEDIA QUERIES!  */
+@media screen and (min-width: 601px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    body {
+    background-color: green;
+
+    }
+    .box {
+        width: 100%;
+    }
+.desktop {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 100%;
+    }
+.desktop {
+    display: none;
+}
+.mobile {
+    display: block;
+}
+}
+
 /* @media(max-width: 500px) {
     body {
         background-color: cyan;
@@ -27,7 +88,7 @@ h2 {
     }
 } */
 
-@media(orientation: portrait) {
+/* @media(orientation: portrait) {
     h1 {
         color: black;
     }
@@ -40,4 +101,4 @@ h2 {
     h2 {
         color: orange;
     }
-}
+} */
