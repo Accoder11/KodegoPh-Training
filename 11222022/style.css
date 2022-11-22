@@ -18,7 +18,7 @@ html {
 header {
     background-color: lightgreen;
     grid-area: header;
-    height: 15vh;
+    height: 20vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -87,7 +87,7 @@ header {
     height: 20vh;
 }
 header h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 h2 {
     margin: 15px auto;
