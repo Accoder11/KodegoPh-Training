@@ -4,8 +4,8 @@ body {
 
 .flip-box {
   background-color: transparent;
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 350px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
 }
