@@ -42,16 +42,17 @@ nav ul {
 nav li {
     float: left;
 }
-nav a {
+nav a:link, nav a:visited {
     color: white;
     display: block;
-    padding: 12px 18px;
+    width: 150px;
+    padding: 12px 10px;
     text-decoration: none;
     text-align: center;
     font-size: 2rem;
 }
-li a:hover {
-    background-color: aqua;
+li a:hover, li a:active {
+    background-color: yellowgreen;
     cursor: pointer;
 }
 main {
