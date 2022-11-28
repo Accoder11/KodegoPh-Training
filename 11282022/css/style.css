@@ -1,18 +1,41 @@
-/* Error: Undefined mixin.
- *   ,
- * 2 |     @include font-style ($desktop-font, $impact, 500, $secondary-blue);
- *   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\_intro.scss 2:5  @import
- *   scss\style.scss 6:9   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 2 \2502      @include font-style ($desktop-font, $impact, 500, $secondary-blue);\d\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\_intro.scss 2:5  @import\a   scss\\style.scss 6:9   root stylesheet";
+nav {
+  padding: 20px;
 }
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #000;
+}
+
+.message {
+  font-size: 24px;
+  font-family: "Impact";
+  font-weight: 500;
+  color: #464a96;
+}
+
+.sample {
+  font-size: 32px;
+  font-family: Arial;
+  font-weight: 800;
+  color: lightblue;
+}
+
+.warning {
+  font-size: 24px;
+  font-weight: bold;
+  color: yellow;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

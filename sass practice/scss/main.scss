@@ -1,0 +1,31 @@
+// Never modify your MAIN CSS FILE!!!
+
+@import "./resets";
+
+// These are variables!!!
+
+$primary-color: #123456;
+$accent-color: #246810;
+$text-color: #fff;
+$font-weigth: (
+    "regular" : 400,
+    "medium" : 500,
+    "bold" : 700
+);
+
+body {
+    background-color: $accent-color;
+    color: $text-color;
+    
+}
+.main {
+    width: 80%;
+    margin: 0 auto;
+    #{&}_paragraph {
+        font-weight: map-get($font-weigth, bold);
+
+        &:hover {
+            color: red;
+        }
+    }
+}

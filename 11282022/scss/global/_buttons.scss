@@ -1,0 +1,12 @@
+// sir, pwed din po ba ang sass sa bootstrap?
+
+%btn-style {
+    @include font-style($desktop-font, 'Arial', 500, $black);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0 15px;
+    min-height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
