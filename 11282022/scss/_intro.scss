@@ -1,0 +1,4 @@
+.message {
+    @include font-style ($desktop-font, $impact, 500, $secondary-blue);
+}
+// from _variables.sccs 
