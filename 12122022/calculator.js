@@ -8,7 +8,11 @@ const operator = prompt('Enter operator ( either +, -, * or / )');
 // Ask for the 2nd number
 const num2 = prompt ("Enter the 2nd number ");
 
+// Show the entered values
+
 alert ("You've entered: " + Number(num1) + " " + operator + " " + Number(num2));
+
+// show the result in the html page
 
 if (operator == '+') {
     let h1 = document.getElementById("result");
